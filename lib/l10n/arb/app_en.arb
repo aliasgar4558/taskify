@@ -1,0 +1,38 @@
+{
+  "@@locale": "en",
+  "appName": "Taskify",
+  "unknownPage": "Unknown page",
+  "home": "Home",
+  "emptyTasks": "No tasks added yet. Tap on 'Add' to create one.",
+  "deleteTask": "Delete Task",
+  "deleteTaskConfirmation": "Are you sure you want to delete '{label}' ?",
+  "@deleteTaskConfirmation": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tasks": "Tasks",
+  "add": "Add",
+  "addNewItem": "Add new item",
+  "addTask": "Add task",
+  "updateTask": "Update task",
+  "update": "Update",
+  "enterTaskName": "Enter task name",
+  "cancel": "Cancel",
+  "yes": "Yes",
+  "no": "No",
+  "updatedOn": "Updated on: {value}",
+  "@updatedOn": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "all": "All",
+  "active": "Active",
+  "completed": "Completed",
+  "cannotUpdateCompletedTask": "You cannot update already completed task."
+}

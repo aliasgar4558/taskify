@@ -1,0 +1,59 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "test/.test_coverage.dart"
+    - "bin/cache/**"
+    - "lib/generated_plugin_registrant.dart"
+    - "analysis_options.yaml"
+  errors:
+    todo: ignore
+    dead_code: info
+    missing_return: error
+
+formatter:
+  page_width: 120
+  trailing_commas: preserve
+
+linter:
+  rules:
+    - avoid_relative_lib_imports
+    - no_wildcard_variable_uses
+    - always_put_control_body_on_new_line
+    - slash_for_doc_comments
+    - avoid_types_as_parameter_names
+    - no_self_assignments
+    - unnecessary_statements
+    - avoid_empty_else
+    - prefer_const_constructors
+    - prefer_final_fields
+    - prefer_mixin
+    - use_key_in_widget_constructors
+    - avoid_print
+    - use_string_buffers
+    - always_declare_return_types
+    - prefer_asserts_with_message
+    - cancel_subscriptions
+    - avoid_returning_null_for_void
+
+    # 🔥 Recommended Additions
+    - always_put_required_named_parameters_first
+    - annotate_overrides
+    - avoid_field_initializers_in_const_classes
+    - avoid_unnecessary_containers
+    - cascade_invocations
+    - depend_on_referenced_packages
+    - flutter_style_todos
+    - join_return_with_assignment
+    - prefer_const_declarations
+    - prefer_final_in_for_each
+    - sized_box_for_whitespace
+    - sort_child_properties_last
+    - type_annotate_public_apis
+    - unnecessary_await_in_return
+    - unnecessary_lambdas
+    - prefer_final_locals
+    - avoid_dynamic_calls
+    - require_trailing_commas
