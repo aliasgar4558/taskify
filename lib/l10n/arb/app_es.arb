@@ -1,4 +1,39 @@
 {
   "@@locale": "es",
-  "appName": "Taskify"
+  "appName": "Taskify",
+  "unknownPage": "Página desconocida",
+  "home": "Inicio",
+  "emptyTasks": "Aún no se han agregado tareas. Toca 'Agregar' para crear una.",
+  "deleteTask": "Eliminar tarea",
+  "deleteTaskConfirmation": "¿Estás seguro de que deseas eliminar '{label}'?",
+  "@deleteTaskConfirmation": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tasks": "Tareas",
+  "add": "Agregar",
+  "addNewItem": "Agregar nuevo elemento",
+  "addTask": "Agregar tarea",
+  "updateTask": "Actualizar tarea",
+  "update": "Actualizar",
+  "enterTaskName": "Ingresa el nombre de la tarea",
+  "cancel": "Cancelar",
+  "yes": "Sí",
+  "no": "No",
+  "updatedOn": "Actualizado el: {value}",
+  "@updatedOn": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "all": "Todas",
+  "active": "Activas",
+  "completed": "Completadas",
+  "cannotUpdateCompletedTask": "No puedes actualizar una tarea ya completada.",
+  "labelIsMandatory": "La etiqueta es obligatoria"
 }

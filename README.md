@@ -45,7 +45,7 @@ $ flutter build ipa
 
 ### Released Versions :
 
-* [v1.0.0+1](https://i.diawi.com/Lg2652) _: can also be found inside /assets/releases_
+* [v1.0.0+2](https://i.diawi.com/NX9hLG) _: can also be found inside /assets/releases_
 
-![https://i.diawi.com/Lg2652](/assets/images/v1_diawi.png)
+![https://i.diawi.com/NX9hLG](/assets/images/v2_diawi.png)
 

@@ -12,66 +12,71 @@ class AppLocalizationsEs extends AppLocalizations {
   String get appName => 'Taskify';
 
   @override
-  String get unknownPage => 'Unknown page';
+  String get unknownPage => 'Página desconocida';
 
   @override
-  String get home => 'Home';
+  String get home => 'Inicio';
 
   @override
-  String get emptyTasks => 'No tasks added yet. Tap on \'Add\' to create one.';
+  String get emptyTasks =>
+      'Aún no se han agregado tareas. Toca \'Agregar\' para crear una.';
 
   @override
-  String get deleteTask => 'Delete Task';
+  String get deleteTask => 'Eliminar tarea';
 
   @override
   String deleteTaskConfirmation(String label) {
-    return 'Are you sure you want to delete \'$label\' ?';
+    return '¿Estás seguro de que deseas eliminar \'$label\'?';
   }
 
   @override
-  String get tasks => 'Tasks';
+  String get tasks => 'Tareas';
 
   @override
-  String get add => 'Add';
+  String get add => 'Agregar';
 
   @override
-  String get addNewItem => 'Add new item';
+  String get addNewItem => 'Agregar nuevo elemento';
 
   @override
-  String get addTask => 'Add task';
+  String get addTask => 'Agregar tarea';
 
   @override
-  String get updateTask => 'Update task';
+  String get updateTask => 'Actualizar tarea';
 
   @override
-  String get update => 'Update';
+  String get update => 'Actualizar';
 
   @override
-  String get enterTaskName => 'Enter task name';
+  String get enterTaskName => 'Ingresa el nombre de la tarea';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Cancelar';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Sí';
 
   @override
   String get no => 'No';
 
   @override
   String updatedOn(String value) {
-    return 'Updated on: $value';
+    return 'Actualizado el: $value';
   }
 
   @override
-  String get all => 'All';
+  String get all => 'Todas';
 
   @override
-  String get active => 'Active';
+  String get active => 'Activas';
 
   @override
-  String get completed => 'Completed';
+  String get completed => 'Completadas';
 
   @override
-  String get cannotUpdateCompletedTask => 'You cannot update already completed task.';
+  String get cannotUpdateCompletedTask =>
+      'No puedes actualizar una tarea ya completada.';
+
+  @override
+  String get labelIsMandatory => 'La etiqueta es obligatoria';
 }

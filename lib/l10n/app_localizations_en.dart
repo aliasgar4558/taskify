@@ -73,5 +73,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get completed => 'Completed';
 
   @override
-  String get cannotUpdateCompletedTask => 'You cannot update already completed task.';
+  String get cannotUpdateCompletedTask =>
+      'You cannot update already completed task.';
+
+  @override
+  String get labelIsMandatory => 'Label is mandatory';
 }

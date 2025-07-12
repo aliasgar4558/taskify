@@ -34,5 +34,6 @@
   "all": "All",
   "active": "Active",
   "completed": "Completed",
-  "cannotUpdateCompletedTask": "You cannot update already completed task."
+  "cannotUpdateCompletedTask": "You cannot update already completed task.",
+  "labelIsMandatory": "Label is mandatory"
 }

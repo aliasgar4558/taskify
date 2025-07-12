@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:taskify/config/extension/build_context_extension.dart';
+import 'package:taskify/config/extension/string_extension.dart';
 import 'package:taskify/feature/todos/domain/models/todo.dart';
 
 Future<dynamic> showAddTodoDialogView({
@@ -21,6 +22,7 @@ class _DialogView extends StatefulWidget {
 }
 
 class _DialogViewState extends State<_DialogView> {
+  String? errorMsg;
   late final TextEditingController _labelController = TextEditingController(
     text: widget.toUpdate?.label,
   );
@@ -35,6 +37,7 @@ class _DialogViewState extends State<_DialogView> {
       keyboardType: TextInputType.text,
       controller: _labelController,
       decoration: InputDecoration(
+        errorText: errorMsg,
         hintText: context.l10n.enterTaskName,
         border: const OutlineInputBorder(),
       ),
@@ -51,6 +54,15 @@ class _DialogViewState extends State<_DialogView> {
       ),
       TextButton(
         onPressed: () {
+          final value = _labelController.text.trim();
+          if (value.isNullOrEmpty) {
+            /// Using setState just for this dialog because it won't be any heavy UI rendering.
+            setState(() {
+              errorMsg = context.l10n.labelIsMandatory;
+            });
+            return;
+          }
+
           if (widget.toUpdate == null) {
             context.pop(_labelController.text.trim());
           } else {
